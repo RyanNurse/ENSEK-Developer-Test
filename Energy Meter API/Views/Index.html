@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>API Interface</title>
+    <link rel="stylesheet" href="Scripts/styling.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h3>Meter Readings Uploader</h3>
+
+    <form action="javascript:void(0);" method="POST" onsubmit="uploadFile()">
+        <input type="file" id="file" accept=".csv">
+        <input type="submit" value="Add">
+    </form>
+
+    <div id="result">
+        <p id="resultText"></p>
+    </div>
+
+    <script src="Scripts/main.js" asp-append-version="true"></script>
+</body>
+</html>
